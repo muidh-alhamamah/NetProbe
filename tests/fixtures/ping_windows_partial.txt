@@ -1,0 +1,11 @@
+
+Pinging 203.0.113.7 with 32 bytes of data:
+Reply from 203.0.113.7: bytes=32 time=20ms TTL=54
+Request timed out.
+Reply from 203.0.113.7: bytes=32 time=22ms TTL=54
+Request timed out.
+
+Ping statistics for 203.0.113.7:
+    Packets: Sent = 4, Received = 2, Lost = 2 (50% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 20ms, Maximum = 22ms, Average = 21ms

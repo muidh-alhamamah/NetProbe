@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+reports/
+
+# Environment files (may hold secrets); keep the example template
+.env
+.env.*
+*.env
+!.env.example
+
+# Editors
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+desktop.ini

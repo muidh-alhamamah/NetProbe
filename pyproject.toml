@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]  # 77+ for the SPDX `license` string (PEP 639)
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netprobe"
+version = "0.1.0"
+description = "Network diagnostic CLI: ping, traceroute, DNS, TCP connectivity, interfaces, reports."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+netprobe = "netprobe.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
