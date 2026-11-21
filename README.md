@@ -75,6 +75,34 @@ whatever console code page or redirection is used.
 - Hostnames must be ASCII (RFC 1123); internationalized domain names are rejected.
 - On Linux, ping/traceroute timeouts are whole seconds (fractions are truncated, minimum 1 s).
 
+## Screenshots & Test Results
+
+Real runs on Windows (PowerShell). Private network details (MAC addresses, local, ISP and router
+addresses) and the local user path are blacked out.
+
+**Ping and TCP connectivity**: `ping 8.8.8.8` with packet loss and min/avg/max latency, then
+`tcp google.com 443`.
+
+![Ping and TCP results](docs/screenshots/01-ping-tcp.png)
+
+**Traceroute**: `trace 8.8.8.8` with every hop's address and response times (`*` = no reply).
+
+![Traceroute results](docs/screenshots/02-traceroute.png)
+
+**Network interfaces**: `iface` listing each interface's name, up/down status and loopback flag.
+
+![Network interface results](docs/screenshots/03-interfaces.png)
+
+**Diagnostic report (text)**: `report google.com` running DNS, ping, TCP 80/443 and traceroute
+in one command; every check passed.
+
+![Diagnostic report as text](docs/screenshots/04-report.png)
+
+**Diagnostic report (JSON)**: the same report saved with `--json`, showing the summary
+(6 checks, 6 passed, 0 failed).
+
+![Diagnostic report as JSON](docs/screenshots/05-report-json.png)
+
 ## Security
 
 - System tools are always run with an argument list and `shell=False`; hosts are validated
