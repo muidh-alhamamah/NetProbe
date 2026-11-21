@@ -1,5 +1,7 @@
 # NetProbe
 
+[![Tests](https://github.com/muidh-alhamamah/NetProbe/actions/workflows/tests.yml/badge.svg)](https://github.com/muidh-alhamamah/NetProbe/actions/workflows/tests.yml)
+
 Network diagnostic CLI in Python: ping, traceroute, DNS lookup, TCP connectivity, network
 interfaces and combined diagnostic reports. Standard library only; supports Windows and Linux.
 
